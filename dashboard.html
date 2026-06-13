@@ -5,141 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oyera Auto Service Bay - Dashboard</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f2f2f2;
-            color: #333;
-        }
-
-        header {
-            background-color: #1a3c5e;
-            color: white;
-            padding: 20px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 24px;
-        }
-
-        header p {
-            margin: 5px 0 0;
-            font-size: 14px;
-            color: #cfd8e0;
-        }
-
-        .container {
-            max-width: 1000px;
-            margin: 20px auto;
-            padding: 0 15px;
-        }
-
-        /* summary cards */
-        .cards {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-bottom: 25px;
-        }
-
-        .card {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-            flex: 1;
-            min-width: 180px;
-            text-align: center;
-        }
-
-        .card h2 {
-            margin: 0;
-            font-size: 28px;
-            color: #1a3c5e;
-        }
-
-        .card p {
-            margin: 5px 0 0;
-            font-size: 13px;
-            color: #666;
-        }
-
-        /* sections */
-        section {
-            background-color: white;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 15px;
-            margin-bottom: 25px;
-        }
-
-        section h3 {
-            margin-top: 0;
-            border-bottom: 2px solid #1a3c5e;
-            padding-bottom: 8px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th,
-        td {
-            padding: 10px;
-            text-align: left;
-            border-bottom: 1px solid #eee;
-            font-size: 14px;
-        }
-
-        th {
-            background-color: #1a3c5e;
-            color: white;
-        }
-
-        tr:hover {
-            background-color: #f9f9f9;
-        }
-
-        .status {
-            padding: 3px 10px;
-            border-radius: 10px;
-            font-size: 12px;
-            color: white;
-        }
-
-        .in-bay {
-            background-color: #e67e22;
-        }
-
-        .done {
-            background-color: #27ae60;
-        }
-
-        footer {
-            text-align: center;
-            padding: 15px;
-            font-size: 12px;
-            color: #888;
-        }
-
-        @media (max-width: 600px) {
-            .cards {
-                flex-direction: column;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-
     <header>
         <h1>Oyera Auto Service Bay</h1>
         <p>Daily Service Dashboard</p>
     </header>
-
+    <div id="dashboardstyle-container">
     <div class="container">
 
         <!-- Summary cards -->
@@ -248,13 +120,14 @@
                 </tr>
             </table>
         </section>
-
+    
     </div>
 
     <footer>
         Oyera Auto Service Bay Ltd
     </footer>
-
+</div>
+</div>
 </body>
 
 </html>

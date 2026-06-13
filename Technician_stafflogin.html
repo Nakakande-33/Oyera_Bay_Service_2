@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oyera Auto Service Bay - Staff Portal></Portal></title>
+ <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+  <header>
+    <h1>Oyera Auto Service Bay</h1>
+    <p>Internal Staff Management Portal</p>
+  </header>
+  <div id="techreg-container">
+  <div class="container">
+    <div class="form-card">
+      <h2>Onboard New Service Technician</h2>
+      
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="techName">Technician Full Name</label>
+          <input type="text" id="techName" name="techName" placeholder="e.g., A. Okello" required>
+        </div>
+
+        <div class="form-group">
+          <label for="techTier">Role / Tier Assignment</label>
+          <select id="techTier" name="techTier" required>
+            <option value="">-- Select Tier --</option>
+            <option value="senior">Senior Technician (Inspection & Diagnosis Authority)</option>
+            <option value="junior">Standard Service Technician</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="username">System Username</label>
+          <input type="text" id="username" name="username" placeholder="e.g., a.okello" required>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Portal Access Password</label>
+          <input type="password" id="password" name="password" placeholder="Create system password" required>
+        </div>
+
+        <button type="submit" class="btn-submit">Save Technician Credentials</button>
+      </form>
+
+      <div class="nav-links">
+        <a href="dashboard.html">&larr; Return to Dashboard</a><p><br>
+        <a href="home.html">&larr;Back to Homepage</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    Oyera Auto Service Bay Ltd &copy; 2026
+  </footer>
+  </div>
+</body>
+</html>
+</head>
