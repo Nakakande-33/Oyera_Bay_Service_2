@@ -191,7 +191,7 @@
 
      {
      /* margin: 20px; */
-     background-color:
+     background-color:  #1a3c5e;
          margin-left: 20px;
      margin-right: 20px;
      margin bottom: 20px;
@@ -207,11 +207,12 @@
  }
 
  body {
-     background-color: blue
+     
+     background-color:  #1a3c5e;
  }
 
  p {
-     color: wheat background-color:blue;
+     background-color:  #1a3c5e;
      padding: 20px;
      margin: 4px;
      font: 1em sans-serif;
@@ -223,7 +224,7 @@
      padding: 0;
      box-sizing: border-box;
      color: white;
-     background color: blue;
+    
  }
 
  #techreg-container body {
@@ -258,7 +259,8 @@
  }
 
  .form-card {
-     background-color: white;
+     background-color: #1a3c5e;
+ }
      border: 1px solid #ddd;
      border-radius: 5px;
      padding: 25px;
@@ -454,3 +456,4 @@
      font-size: 12px;
      color: #888;
  }
+ .form-group

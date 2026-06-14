@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+header {
+    background-color: #1a3c5e;
+    color: white;
+    padding: 20px;
+
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #cfd8e0;
+}
+
+.container {
+    max-width: fit-content;
+    margin: 20 px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    
+    
+
+}
+
+.sidenavbar {
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.sidenavbar li {
+    list-style: none;
+    padding: 6px;
+    margin: 0;
+
+}
+
+.form-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.form-card h2 {
+    margin-top: 0;
+    color: #1a3c5e;
+    border-bottom: 2px solid #e67e22;
+    padding-bottom: 8px;
+    font-size: 20px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a3c5e;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+input:focus,
+select:focus {
+    border-color: #1a3c5e;
+    outline: none;
+}
+
+.btn-submit {
+    background-color: #1a3c5e;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn-submit:hover {
+    background-color: #11273d;
+}
+
+.nav-links {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.nav-links a {
+    color: #e67e22;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: #888;
+}
