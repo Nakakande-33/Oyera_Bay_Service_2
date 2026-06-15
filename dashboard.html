@@ -1,133 +1,355 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Oyera Auto Service Bay - Dashboard</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-    <header>
-        <h1>Oyera Auto Service Bay</h1>
-        <p>Daily Service Dashboard</p>
-    </header>
-    <div id="dashboardstyle-container">
-    <div class="container">
+  </head>
+  <style>
+    *,
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        <!-- Summary cards -->
-        <div class="cards">
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #1a3c5e;
+      color: white;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      padding: 5px 0 15px 0;
+      font-size: 16px;
+      color: #cfd8e0;
+    }
+
+    nav ul {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    nav li {
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #cfd8e0;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 14px;
+      transition:
+        background-color 0.2s,
+        color 0.2s;
+    }
+
+    nav a:hover {
+      background-color: #e67e22;
+      color: white;
+    }
+
+    .container {
+      width: 100%;
+      min-height: 100vh;
+      background-color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+
+    .card-container,
+    .table-section,
+    .price-table {
+      background-color: white;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    }
+
+    #quick-access-section {
+      color: #1a3c5e;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: fit-content;
+      width: fit-content;
+      align-items: center;
+    }
+
+    #quick-access-section h2 {
+      margin: 0;
+      padding: 5px 0;
+    }
+
+    #cards-section {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #1a3c5e;
+      color: white;
+      padding: 15px;
+      border: 1px solid #142d47;
+      border-radius: 8px;
+      flex: 1;
+      min-width: 180px;
+    }
+
+    .card h2 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .card-title {
+      font-size: 13px;
+      color: #cfd8e0;
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th {
+      background-color: #1a3c5e;
+      color: white;
+      font-weight: bold;
+    }
+
+    td,
+    th {
+      border: 1px solid #e0e0e0;
+      text-align: left;
+      padding: 12px;
+      font-size: 14px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    .status {
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    #table-btn {
+      display: flex;
+      justify-content: space-between;
+      height: fit-content;
+      margin-bottom: 15px;
+      align-items: center;
+    }
+
+    #table-btn button {
+      padding: 10px 20px;
+      margin: 0;
+      background-color: #1a3c5e;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    #table-btn button:hover {
+      background-color: #e67e22;
+    }
+
+    section h2 {
+      color: #1a3c5e;
+      margin: 0;
+      padding: 5px 0;
+      font-size: 20px;
+    }
+  </style>
+
+  <body>
+    <header>
+      <h1>Oyera Auto Service Bay</h1>
+      <p>Daily Service Dashboard</p>
+      <nav>
+        <ul>
+          <li><a href="dashboard.html">Customer View </a></li>
+          <li>
+            <a href="customer_registration.html">Customer Registration</a>
+          </li>
+          <li>
+            <a href="Technician_stafflogin.html">Technician Registration</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <main class="form-card">
+        <div class="card-container">
+          <div id="quick-access-section">
+            <h2>Quick Access</h2>
+          </div>
+          <br />
+          <div id="cards-section">
             <div class="card">
-                <h2>3</h2>
-                <p>Cars in Bay</p>
+              <h2>3</h2>
+              <p class="card-title">Number of Cars in Bay</p>
             </div>
             <div class="card">
-                <h2>8</h2>
-                <p>Cars Serviced Today</p>
+              <h2>8</h2>
+              <p class="card-title">Cars Serviced Today</p>
             </div>
             <div class="card">
-                <h2>1,450,000</h2>
-                <p>Revenue Today (UGX)</p>
+              <h2>1,450,000</h2>
+              <p class="card-title">Revenue Today</p>
             </div>
+            <div class="card">
+              <h2>10</h2>
+              <p class="card-title">Available Technicians</p>
+            </div>
+            <div class="card">
+              <h2>10</h2>
+              <p class="card-title">Spare Parts</p>
+            </div>
+          </div>
         </div>
 
-        <!-- Service queue -->
-        <section>
-            <h3>Today's Service Queue</h3>
-            <table>
-                <tr>
-                    <th>Number Plate</th>
-                    <th>Service</th>
-                    <th>Technician</th>
-                    <th>Charge (UGX)</th>
-                    <th>Status</th>
-                </tr>
-                <tr>
-                    <td>UBL 442J</td>
-                    <td>Engine oil + oil filter</td>
-                    <td>A. Okello</td>
-                    <td>135,000</td>
-                    <td><span class="status in-bay">In Bay</span></td>
-                </tr>
-                <tr>
-                    <td>UAX 109K</td>
-                    <td>Wheel alignment + balance</td>
-                    <td>J. Nakato</td>
-                    <td>50,000</td>
-                    <td><span class="status in-bay">In Bay</span></td>
-                </tr>
-                <tr>
-                    <td>UBG 771D</td>
-                    <td>Brake pads + brake fluid</td>
-                    <td>A. Okello</td>
-                    <td>95,000</td>
-                    <td><span class="status in-bay">In Bay</span></td>
-                </tr>
-                <tr>
-                    <td>UBF 884L</td>
-                    <td>Engine oil + oil filter</td>
-                    <td>J. Nakato</td>
-                    <td>120,000</td>
-                    <td><span class="status done">Serviced</span></td>
-                </tr>
-                <tr>
-                    <td>UAJ 552B</td>
-                    <td>Wheel alignment</td>
-                    <td>S. Mugisha</td>
-                    <td>50,000</td>
-                    <td><span class="status done">Serviced</span></td>
-                </tr>
-                <tr>
-                    <td>UBN 218G</td>
-                    <td>Gearbox oil + greasing</td>
-                    <td>S. Mugisha</td>
-                    <td>110,000</td>
-                    <td><span class="status done">Serviced</span></td>
-                </tr>
-            </table>
+        <section class="table-section">
+          <div id="table-btn">
+            <h2>Today's Service Queue</h2>
+            <button type="button">Add New Customer</button>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Number Plate</th>
+                <th>Service</th>
+                <th>Technician</th>
+                <th>Charge (UGX)</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>UBL 442J</td>
+                <td>Engine oil + oil filter</td>
+                <td>A. Okello</td>
+                <td>135,000</td>
+                <td><span class="status in-bay">In Bay</span></td>
+              </tr>
+              <tr>
+                <td>UAX 109K</td>
+                <td>Wheel alignment + balance</td>
+                <td>J. Nakato</td>
+                <td>50,000</td>
+                <td><span class="status in-bay">In Bay</span></td>
+              </tr>
+              <tr>
+                <td>UBG 771D</td>
+                <td>Brake pads + brake fluid</td>
+                <td>A. Okello</td>
+                <td>95,000</td>
+                <td><span class="status in-bay">In Bay</span></td>
+              </tr>
+              <tr>
+                <td>UBF 884L</td>
+                <td>Engine oil + oil filter</td>
+                <td>J. Nakato</td>
+                <td>120,000</td>
+                <td><span class="status done">Serviced</span></td>
+              </tr>
+              <tr>
+                <td>UAJ 552B</td>
+                <td>Wheel alignment</td>
+                <td>S. Mugisha</td>
+                <td>50,000</td>
+                <td><span class="status done">Serviced</span></td>
+              </tr>
+              <tr>
+                <td>UBN 218G</td>
+                <td>Gearbox oil + greasing</td>
+                <td>S. Mugisha</td>
+                <td>110,000</td>
+                <td><span class="status done">Serviced</span></td>
+              </tr>
+            </tbody>
+          </table>
         </section>
 
-        <!-- Price list -->
-        <section>
-            <h3>Service Charges</h3>
-            <table>
-                <tr>
-                    <th>Service / Item</th>
-                    <th>Price (UGX)</th>
-                </tr>
-                <tr>
-                    <td>Labour (per job)</td>
-                    <td>20,000</td>
-                </tr>
-                <tr>
-                    <td>Engine oil</td>
-                    <td>79,000 - 200,000</td>
-                </tr>
-                <tr>
-                    <td>Brake fluid</td>
-                    <td>13,000 - 20,000</td>
-                </tr>
-                <tr>
-                    <td>Oil filter</td>
-                    <td>15,000 - 20,000</td>
-                </tr>
-                <tr>
-                    <td>Wheel alignment</td>
-                    <td>30,000</td>
-                </tr>
-                <tr>
-                    <td>Wheel balance</td>
-                    <td>20,000</td>
-                </tr>
-            </table>
+        <section class="price-table">
+          <h2>Service Charges</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Service / Item</th>
+                <th>Price (UGX)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Labour (per job)</td>
+                <td>20,000</td>
+              </tr>
+              <tr>
+                <td>Engine oil</td>
+                <td>79,000 - 200,000</td>
+              </tr>
+              <tr>
+                <td>Brake fluid</td>
+                <td>13,000 - 20,000</td>
+              </tr>
+              <tr>
+                <td>Oil filter</td>
+                <td>15,000 - 20,000</td>
+              </tr>
+              <tr>
+                <td>Wheel alignment</td>
+                <td>30,000</td>
+              </tr>
+              <tr>
+                <td>Wheel balance</td>
+                <td>20,000</td>
+              </tr>
+            </tbody>
+          </table>
         </section>
-    
+      </main>
     </div>
-
-    <footer>
-        Oyera Auto Service Bay Ltd
-    </footer>
-</div>
-</div>
-</body>
-
+  </body>
 </html>

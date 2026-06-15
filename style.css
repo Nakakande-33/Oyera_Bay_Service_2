@@ -1,3 +1,28 @@
+ :root {
+     --bg-dark-navy: #003352;
+     /* Taken from image_292be2.png header */
+     --bg-body-gray: #f4f6f8;
+     /* Clean neutral background */
+     --card-surface: #ffffff;
+     /* Pure white crisp cards */
+     --accent-green: #008f5d;
+     /* Professional subtle border/accent */
+     --text-primary: #002238;
+     /* Deep high-contrast text */
+     --text-secondary: #5a6b7c;
+     /* Clean muted text */
+     --badge-in-bay: #008f5d;
+     /* Green status badge */
+     --badge-serviced: #718096;
+     /* Sleek gray status badge */
+ }
+
+ body {
+     background-color: var(--bg-body-gray);
+     color: var(--text-primary);
+     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+ }
+
  #dashboardstyle-container body {
      font-family: Arial, sans-serif;
      margin: 0;
@@ -181,7 +206,7 @@
      margin: 20px auto;
      padding: 0 15px;
      background-color: #1a3c5e;
-     transition width: 2s;
+    
  }
 
  .login-container:hover {
@@ -191,8 +216,8 @@
 
      {
      /* margin: 20px; */
-     background-color:  #1a3c5e;
-         margin-left: 20px;
+     background-color: #1a3c5e;
+     margin-left: 20px;
      margin-right: 20px;
      margin bottom: 20px;
      /*margin: top right bottom left;*/
@@ -207,12 +232,12 @@
  }
 
  body {
-     
-     background-color:  #1a3c5e;
+
+     background-color: #1a3c5e;
  }
 
  p {
-     background-color:  #1a3c5e;
+     background-color: #1a3c5e;
      padding: 20px;
      margin: 4px;
      font: 1em sans-serif;
@@ -224,7 +249,7 @@
      padding: 0;
      box-sizing: border-box;
      color: white;
-    
+
  }
 
  #techreg-container body {
@@ -261,12 +286,12 @@
  .form-card {
      background-color: #1a3c5e;
  }
-     border: 1px solid #ddd;
-     border-radius: 5px;
-     padding: 25px;
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
- }
 
+ border: 1px solid #ddd;
+ border-radius: 5px;
+ padding: 25px;
+ box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
  .form-card h2 {
      margin-top: 0;
      color: #1a3c5e;
@@ -382,7 +407,7 @@
  }
 
  .form-card h2 {
-     margin-top: 0;
+     margin-top: 25;
      color: #1a3c5e;
      border-bottom: 2px solid #27ae60;
      /* Using the dashboard green accent for staff elements */
@@ -456,4 +481,61 @@
      font-size: 12px;
      color: #888;
  }
- .form-group
+
+ .form-group .sidenavbar {
+     background-color: #1a3c5e;
+     margin-top: 5px;
+     margin-left: 0px;
+     margin-bottom: 5px;
+     margin-right: 5px;
+     padding: 20px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+ }
+
+ .sidenavbar li {
+     background-color: azure;
+     list-style: none;
+     padding: 25px;
+     margin: 0;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+ }
+
+ .sidenavbars {
+     background-color: #1a3c5e;
+     margin-right: 0px;
+     padding: 20px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     font-family: Arial, sans-serif;
+     color: #ff5733;
+     max-width: min-content;
+
+ }
+
+ .sidenavbars li {
+     background-color: greenyellow;
+     list-style: none;
+     padding: 20px;
+     margin: 20px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     max-width: auto;
+     height: fit-content;
+ }
+
+ #techreg-container {
+
+    margin-top: 0%;
+    padding: 20;
+    box-sizing: border-box;
+    color: white;
+    height: fit-content;
+    
+
+
+}
