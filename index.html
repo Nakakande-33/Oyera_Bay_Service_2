@@ -1,13 +1,257 @@
-<!doctype html>
-<html lang="en" data-bs-theme="dark">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oyera Auto Service Bay - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f2f2f2;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #1a3c5e;
+      color: white;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    header p {
+      margin: 5px 0 0;
+      padding: 10px 0;
+      font-size: 14px;
+      color: #cfd8e0;
+    }
+
+    .container {
+      max-width: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+    }
+
+    .sidenavbar {
+      margin: 0;
+      padding: 12px;
+      background-color: #1a3c5e;
+      flex: 0 0 240px;
+      box-sizing: border-box;
+    }
+
+    .sidenavbar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidenavbar li {
+      margin-bottom: 8px;
+      padding: 0;
+    }
+
+    .sidenavbar a {
+      color: #cfd8e0;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      padding: 10px;
+      border-radius: 4px;
+      font-size: 14px;
+      transition: background-color 0.2s;
+    }
+
+    .sidenavbar a:hover {
+      background-color: #e67e22;
+      color: white;
+    }
+
+    .form-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 25px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      width: 100%;
+      max-width: 550px;
+      box-sizing: border-box;
+      margin: 40px auto;
+    }
+
+    .form-card h2 {
+      margin-top: 0;
+      color: #1a3c5e;
+      border-bottom: 2px solid #e67e22;
+      padding-bottom: 8px;
+      font-size: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #1a3c5e;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+
+    input:focus,
+    select:focus {
+      border-color: #1a3c5e;
+      outline: none;
+    }
+
+    .btn-submit {
+      background-color: #1a3c5e;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 4px;
+      font-size: 15px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+    }
+
+    .btn-submit:hover {
+      background-color: #11273d;
+    }
+
+    .nav-links {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .nav-links a {
+      color: #e67e22;
+      text-decoration: none;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 12px;
+      color: #888;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <h1>Oyera Auto Service Bay</h1>
+      <a href="CustomerLoginpage.html" class="btn-portal"><button type="button" class="btn btn-outline-primary">Customer Login</button></a><br>
+      <a href="customer_registration.html" class="btn-portal"><button type="button" class="btn btn-outline-primary">Create Account</button></a><br>
+      <a href="Technician_stafflogin.html" class="btn-portal"><button type="button" class="btn btn-outline-primary" class="btn btn-primary"button>Staff Portal Login</button></a><br>
+    </nav>
+  </header>
+
+  <main>
+    <!-- page content -->
+  </main>
+
+  <footer>
+    <!-- footer stuff -->
+  </footer>
+</body>
+<div>
+
+</div>
+</header>
+<div class="container">
+  <!-- Content here -->
+  <div class="hero">
+    <h2>Professional Vehicle Care & Maintenance</h2>
+    <p>Handling heavy, small, and commercial vehicles with precision, quality spare parts, and dedicated expert
+      technicians.</p>
+    Book your service today and experience the difference at Oyera Auto Service Bay!<br>
+    <p>
+      <button type="button" class="btn btn-primary btn-lg">Book Appointment</button>
+    </p>
+  </div>
+</div>
+
+
+<div class="container">
+  <!-- Content here -->
+  <div class="services-grid">
+    <div class="service-box">
+      <h3>Routine Servicing</h3>
+      <p>Keep your engine running perfectly with premium parts and fluids:</p>
+      <ul>
+        <li>Engine Oil & Filter Changes</li>
+        <li>Gearbox Oil & Filter Replacements</li>
+        <li>Brake Fluids & Brake Pads Replacement</li>
+        <li>Greasing & Minor Structural Repairs</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="service-box">
+    <h3>Wheel Clinic</h3>
+    <p>Maximize tire lifespan and ride smoothness with our specialized equipment:</p>
+    <ul>
+      <li>Precision Computerized Wheel Alignment</li>
+      <li>Accurate Wheel Balancing</li>
+      <li>Suspension and Under-carriage checks</li>
+    </ul>
+  </div>
+
+  <div class="service-box">
+    <h3>Why Choose OAS Bay?</h3>
+    <ul>
+      <li><strong>Flat Labor Fee:</strong> Transparent base labor fee of UGX 20,000 per job.</li>
+      <li><strong>Genuine Parts Inventory:</strong> High-grade filters and top-tier oils on sale directly on-site.
+      </li>
+      <li><strong>Expert Hands:</strong> Collaborative workflow managed by senior technicians.</li>
+    </ul>
+  </div>
+
+</div>
+</div>
+
+<footer>
+  Oyera Auto Service Bay Ltd &copy; 2026 | Kampala, Uganda
+</footer>
+
+</body>
+
 </html>
